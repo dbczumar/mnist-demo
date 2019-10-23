@@ -9,7 +9,7 @@ COPY . /server
 RUN curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 RUN bash Miniconda3-latest-Linux-x86_64.sh -b
 ENV PATH="/root/miniconda3/bin:${PATH}"
-RUN conda install numpy flask gunicorn
+RUN conda install numpy flask gunicorn pandas
 
 WORKDIR /server
 
